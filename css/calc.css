@@ -1,0 +1,26 @@
+
+body{
+	text-align: center;
+	margin-top:50px;	
+	width: 300px;
+	height: 430px;
+	border: solid 2px;
+	margin-left: 530px;
+	font-family: Pacifico;
+
+}
+.bt{
+	font-size: 22px;
+	height: 40x;
+	padding: 9px;
+	margin: 12px;
+	font-family: Pacifico;
+}
+.contI{
+	padding:10px;
+	font-size: 32px;
+;
+}
+#vis{
+	background-color:#f1f1f1;
+}

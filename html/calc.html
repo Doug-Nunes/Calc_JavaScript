@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head lang="pt/br">
+		<meta charset= "UTF-8">
+		<title>Calculadora Web</title>
+		<link rel="stylesheet"  href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../css/calc.css">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<script language="Javascript">
+					function button(valor){
+					 document.getElementById("vis").value += valor;				
+	  				}
+				function cc(){
+					var calc = 0 ;
+					calc = document.getElementById("vis").value;					
+					document.getElementById("vis").value = eval(calc);
+					}
+				function limpar(){					
+					document.getElementById("vis").value = '';
+					}				
+		</script>
+	</head>
+	<body>
+		<header class="contI"> 
+			<h1>Calculadora</h1>
+			<input type="text" size="30px" id="vis">	
+		</header>
+		<section class="contM">
+			<form>
+			<input type="button" name="op" value="7" onclick="button('7');" class="bt">			
+			<input type="button" name="op" value="8" onclick="button('8');" class="bt">
+			<input type="button" name="op" value="9" onclick="button('9');" class="bt">					
+			<input type="button" name="op" value="*" onclick="button('*'), cc();" class="bt">
+			<input type="button" name="op" value="4" onclick="button('4');" class="bt">
+			<input type="button" name="op" value="5" onclick="button('5');" class="bt">
+			<input type="button" name="op" value="6" onclick="button('6');" class="bt">
+			<input type="button" name="op" value="/" onclick="button('/'), cc();" class="bt">
+			<input type="button" name="op" value="1" onclick="button('1');" class="bt">			
+			<input type="button" name="op" value="2" onclick="button('2');" class="bt">
+			<input type="button" name="op" value="3" onclick="button('3');" class="bt">
+			<input type="button" name="op" value="+" onclick="button('+'), cc();" class="bt"> 
+			<input type="button" name="op" value="0" onclick="button('0');" class="bt">	
+			
+			 <input type="button" name="op" value="C" onclick="limpar();" class="bt">		
+					
+			<input type="button" name="op" value="=" onclick=" cc();" class="bt">
+		   
+		    <input type="button" name="op" value="-" onclick="button('-'), cc();" class="bt">	
+			</form>	
+		</section>						
+	</body>
+</html>
